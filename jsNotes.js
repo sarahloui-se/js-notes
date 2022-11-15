@@ -89,6 +89,15 @@ switch (val) {
 // Are mutable - so you can update properties even if you declare w. const!
 // Passed by reference - when variable assigned to obj into funct as argument, computer interprets parameter name as pointing to space in memory holding object
 
+// Testing objects for properties
+const myObj = {
+  top: "hat",
+  bottom: "pants"
+};
+
+myObj.hasOwnProperty("top");
+myObj.hasOwnProperty("middle");
+
 // Deleting properties from objects
 let testObject = {
   key: 'value',
@@ -157,3 +166,10 @@ const robot = {
   }
 };
 
+/* destructured assignment
+goes from this... */
+const residence = vampire.residence; 
+console.log(residence); // Prints 'Transylvania' 
+  // to...
+const { residence } = vampire; 
+console.log(residence); // Prints 'Transylvania'

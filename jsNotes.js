@@ -173,3 +173,14 @@ console.log(residence); // Prints 'Transylvania'
   // to...
 const { residence } = vampire; 
 console.log(residence); // Prints 'Transylvania'
+
+/* CLASSES */
+class Rectangle {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }
+}
+
+// Creating instances
+const rectangle1 = new Rectangle(300, 600);
